@@ -875,6 +875,73 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.consumer-intelligence-project-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  align-items: center;
+  gap: 28px;
+  border-color: rgba(114, 182, 255, 0.34);
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(63, 140, 255, 0.15), transparent 40%),
+    linear-gradient(145deg, rgba(13, 30, 55, 0.98), rgba(12, 24, 46, 0.95));
+  box-shadow: 0 24px 70px rgba(22, 74, 145, 0.14), var(--shadow);
+}
+
+.consumer-intelligence-project-card .project-content {
+  min-width: 0;
+}
+
+.consumer-intelligence-project-card h3 {
+  max-width: 760px;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.2;
+}
+
+.consumer-intelligence-project-aside {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(4, 12, 25, 0.48);
+}
+
+.consumer-intelligence-project-aside .panel-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.consumer-intelligence-project-aside ul {
+  margin: 0 0 20px;
+  padding-left: 19px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.consumer-intelligence-project-aside li + li {
+  margin-top: 8px;
+}
+
+.consumer-project-note,
+.consumer-hero-note {
+  margin: 18px 0 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.consumer-hero-panel .portfolio-hero-caption {
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 4px;
+}
+
+.consumer-hero-summary {
+  margin: 0 0 16px;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
 .projects-grid {
   display: grid;
   gap: 18px;
@@ -1104,6 +1171,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .consumer-intelligence-project-card {
+    grid-template-columns: 1fr;
+  }
+
   .visual-card,
   .visual-card-wide {
     grid-column: span 6;
@@ -1193,6 +1264,10 @@ main {
 
   .hero-actions .btn,
   .case-actions .btn {
+    width: 100%;
+  }
+
+  .consumer-intelligence-project-aside .btn {
     width: 100%;
   }
 

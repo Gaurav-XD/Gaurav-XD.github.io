@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Consumer Intelligence & Demand Forecasting Platform: an independent synthetic-data portfolio project in consumer analytics, machine learning, and forecasting."
+  />
+  <link rel="canonical" href="https://gaurav-xd.github.io/consumer-intelligence.html" />
+  <meta property="og:title" content="Consumer Intelligence & Demand Forecasting | Case Study" />
+  <meta
+    property="og:description"
+    content="A synthetic-data portfolio project covering customer analytics, churn, product-demand forecasting, validation, and local engineering prototypes."
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://gaurav-xd.github.io/consumer-intelligence.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Consumer Intelligence & Demand Forecasting | Case Study" />
+  <meta
+    name="twitter:description"
+    content="Independent consumer analytics and forecasting project using synthetic data. Local prototypes; no production or cloud deployment."
+  />
+  <meta name="theme-color" content="#07111f" />
+  <title>Consumer Intelligence &amp; Demand Forecasting | Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="tokenlab-case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="tokenlab-case-nav">
+    <div class="container tokenlab-case-nav-inner">
+      <a class="tokenlab-case-brand" href="index.html#projects" aria-label="Return to portfolio projects">GS <span>/ Consumer Analytics</span></a>
+      <nav class="tokenlab-case-nav-links" aria-label="Case study navigation">
+        <a href="index.html#projects">Portfolio</a>
+        <a
+          class="btn btn-primary"
+          href="https://github.com/Gaurav-XD/consumer-intelligence-demand-forecasting"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub repository</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="tokenlab-case-hero">
+      <div class="container tokenlab-case-hero-grid">
+        <div>
+          <span class="section-label">Independent Data Science Project · Synthetic Retail Data</span>
+          <h1>Consumer Intelligence &amp; Demand Forecasting Platform</h1>
+          <p class="tokenlab-case-lead">
+            Data Science / Consumer Analytics / Machine Learning. An end-to-end portfolio
+            project using Python, SQL, scikit-learn, PySpark, Databricks-compatible notebook
+            code, and MLflow to explore customer behavior and product demand.
+          </p>
+          <div class="tokenlab-case-tags" aria-label="Project scope">
+            <span>Synthetic data</span>
+            <span>Local execution</span>
+            <span>Portfolio prototype</span>
+          </div>
+          <div class="tokenlab-case-actions">
+            <a
+              class="btn btn-primary"
+              href="https://github.com/Gaurav-XD/consumer-intelligence-demand-forecasting"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Explore the GitHub repository</a>
+            <a class="btn btn-outline" href="index.html">Back to Portfolio</a>
+          </div>
+        </div>
+        <aside class="case-study-side">
+          <span class="section-label">Project at a glance</span>
+          <div class="kpi-grid">
+            <article class="kpi-card">
+              <span class="kpi-value">5,000</span>
+              <span class="kpi-label">synthetic customers in the local Spark reconciliation</span>
+            </article>
+            <article class="kpi-card">
+              <span class="kpi-value">21.48%</span>
+              <span class="kpi-label">forecast walk-forward WAPE on validation data</span>
+            </article>
+            <article class="kpi-card">
+              <span class="kpi-value">9</span>
+              <span class="kpi-label">runs recorded in two local MLflow experiments</span>
+            </article>
+            <article class="kpi-card">
+              <span class="kpi-value">Local</span>
+              <span class="kpi-label">API, dashboard, Spark and experiment-tracking scope</span>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section section-dark" id="business-problem">
+      <div class="container">
+        <span class="section-label">Business problem</span>
+        <h2 class="tokenlab-case-heading">Connect customer and product signals to decisions</h2>
+        <p class="tokenlab-case-intro">
+          Retail teams need a joined-up view of who is buying, which customers may become
+          inactive, how customer value differs, and how product demand changes over time.
+          This project demonstrates an analytical workflow for those questions and explores
+          how outputs might inform retention and inventory decisions.
+        </p>
+        <div class="tokenlab-facts-grid">
+          <article class="tokenlab-fact">
+            <h3>Churn</h3>
+            <p>Identify customers with no purchase in a defined future observation window.</p>
+          </article>
+          <article class="tokenlab-fact">
+            <h3>Customer value</h3>
+            <p>Explore segmentation, retention patterns, and a transparent CLV revenue proxy.</p>
+          </article>
+          <article class="tokenlab-fact">
+            <h3>Product demand</h3>
+            <p>Build product-month demand features and compare forecasting approaches.</p>
+          </article>
+          <article class="tokenlab-fact">
+            <h3>Business impact</h3>
+            <p>Translate model outputs into explicit scenarios, not claims of realized ROI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section" id="workflow">
+      <div class="container">
+        <span class="section-label">End-to-end data science workflow</span>
+        <h2 class="tokenlab-case-heading">From a defined question to decision support</h2>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>1. Business framing &amp; data preparation</h3>
+            <p>Define synthetic retail data contracts, generate reproducible inputs, validate data quality, and explore customer and transaction patterns.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>2. Point-in-time feature engineering</h3>
+            <p>Build customer behavior features and lagged, shifted rolling demand features using only information available at each prediction cutoff.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>3. Modeling &amp; validation</h3>
+            <p>Compare classical models, tune using training-only procedures, and use out-of-time churn evaluation and chronological demand validation.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>4. Business impact &amp; local prototypes</h3>
+            <p>Quantify assumption-based scenarios and expose existing model artifacts through local API and dashboard prototypes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section section-dark" id="customer-analytics">
+      <div class="container">
+        <span class="section-label">Customer analytics</span>
+        <h2 class="tokenlab-case-heading">Descriptive customer value and predictive risk</h2>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>RFM segmentation</h3>
+            <p>Deterministic recency, frequency, and monetary scoring creates interpretable customer groups for exploration.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Cohort retention</h3>
+            <p>First-observed-purchase cohorts track customer and revenue retention across matured monthly periods.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>CLV proxy</h3>
+            <p>A one-year revenue run-rate proxy annualizes observed revenue; it is not discounted lifetime profit or a validated probabilistic CLV model.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Churn prediction</h3>
+            <p>Predictors are rebuilt at customer snapshots; churn is defined as no purchase in the following 90 calendar days.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section" id="churn-modeling">
+      <div class="container">
+        <span class="section-label">Churn modeling</span>
+        <h2 class="tokenlab-case-heading">Compare interpretable and ensemble baselines</h2>
+        <p class="tokenlab-case-intro">
+          Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting were
+          evaluated. Training-only three-fold stratified, unshuffled cross-validation
+          selected the tuned Random Forest by average precision. Evaluation uses disjoint
+          customer groups at earlier and later feature snapshots; it is an out-of-time
+          holdout design, not chronological inner cross-validation.
+        </p>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>Tuning and selected model</h3>
+            <p>Randomized search considered six configurations per model. The selected Random Forest was refit on the training data before test evaluation.</p>
+            <div class="tokenlab-case-stack" aria-label="Selected churn model parameters">
+              <span>120 trees</span><span>max depth 10</span><span>minimum leaf size 10</span><span>max features 0.7</span>
+            </div>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Previously reported test metrics</h3>
+            <div class="kpi-grid">
+              <article class="kpi-card"><span class="kpi-value">0.782</span><span class="kpi-label">ROC-AUC</span></article>
+              <article class="kpi-card"><span class="kpi-value">0.616</span><span class="kpi-label">PR-AUC / average precision</span></article>
+              <article class="kpi-card"><span class="kpi-value">0.561</span><span class="kpi-label">precision at default threshold</span></article>
+              <article class="kpi-card"><span class="kpi-value">0.744</span><span class="kpi-label">recall at default threshold</span></article>
+              <article class="kpi-card"><span class="kpi-value">0.640</span><span class="kpi-label">F1 at default threshold</span></article>
+            </div>
+          </article>
+        </div>
+        <p class="tokenlab-case-intro">
+          These are synthetic-data holdout results; the test set was already inspected
+          during baseline comparisons. They are not a fresh independent estimate of
+          generalization performance.
+        </p>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section section-dark" id="demand-forecasting">
+      <div class="container">
+        <span class="section-label">Demand forecasting</span>
+        <h2 class="tokenlab-case-heading">Chronological product-month forecasts</h2>
+        <p class="tokenlab-case-intro">
+          A seasonal-naive lag-12 baseline and classical ML models were compared.
+          Features include prior-month demand lags and rolling means and standard
+          deviations calculated from shifted history, plus known calendar features.
+          Validation cutoffs are shared across products; tuning uses training-period
+          expanding-calendar folds only.
+        </p>
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <span class="kpi-value">21.48%</span>
+            <span class="kpi-label">walk-forward WAPE · validation period</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">8.37</span>
+            <span class="kpi-label">walk-forward MAE · units per product-month</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">300</span>
+            <span class="kpi-label">walk-forward product-month predictions</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">Random Forest</span>
+            <span class="kpi-label">selected by training-only CV MAE</span>
+          </article>
+        </div>
+        <div class="tokenlab-disclosure" style="margin-top: 24px;">
+          Walk-forward evaluation refits before each validation month and assumes
+          prior actual demand is available. It is one-step rolling evaluation, not
+          fixed-origin multi-step forecasting. Only two training CV folds were
+          available, and validation results were reused during development.
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section" id="business-impact">
+      <div class="container">
+        <span class="section-label">Business impact &amp; ROI</span>
+        <h2 class="tokenlab-case-heading">Scenario estimates are not business results</h2>
+        <p class="tokenlab-case-intro">
+          The churn scenario scores only the 965-customer held-out subset. At a 0.5
+          risk threshold, 456 are marked high risk. The calculations use historical
+          revenue proxies and assumed intervention effectiveness; probabilities
+          are not calibrated and no intervention was delivered.
+        </p>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>Retention scenario · source currency unspecified</h3>
+            <div class="kpi-grid">
+              <article class="kpi-card"><span class="kpi-value">37,520</span><span class="kpi-label">scenario revenue at risk</span></article>
+              <article class="kpi-card"><span class="kpi-value">3,752</span><span class="kpi-label">scenario revenue protected</span></article>
+              <article class="kpi-card"><span class="kpi-value">2,280</span><span class="kpi-label">assumed intervention cost</span></article>
+              <article class="kpi-card"><span class="kpi-value">−50.63%</span><span class="kpi-label">scenario ROI</span></article>
+            </div>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Assumptions behind the estimate</h3>
+            <ul class="tokenlab-case-list">
+              <li>10% relative churn reduction among customers above the risk threshold.</li>
+              <li>30% contribution margin and 5 source-currency units per contact.</li>
+              <li>ROI = (protected revenue × margin − contact cost) / contact cost.</li>
+              <li>Forecast inventory exposure uses separate assumed unit revenue, lost-sale share, and holding cost.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="tokenlab-disclosure" style="margin-top: 24px;">
+          These are reproducible scenario calculations on synthetic data, not
+          measured revenue protection, realized ROI, savings, or causal impact.
+          Currency units are unspecified; excluded costs and actual intervention
+          response could change the result.
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section section-dark" id="causal-uplift">
+      <div class="container">
+        <span class="section-label">Causal / uplift analysis</span>
+        <h2 class="tokenlab-case-heading">A placebo diagnostic, not causal evidence</h2>
+        <div class="tokenlab-disclosure">
+          <p>
+            Treatment assignment in the current workflow is hypothetical and
+            retrospective; no retention intervention was delivered. The observed
+            differences and ranked uplift-style scores do <strong>not</strong>
+            establish causal treatment effects or show which customers would
+            benefit.
+          </p>
+          <p>
+            The next valid step would be a prospective randomized experiment with
+            verified treatment delivery, prespecified outcomes, and an evaluation
+            plan established before results are observed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section" id="engineering">
+      <div class="container">
+        <span class="section-label">Engineering &amp; deployment</span>
+        <h2 class="tokenlab-case-heading">Reusable pipelines with local execution evidence</h2>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>PySpark</h3>
+            <p>DataFrame joins and aggregations reproduced the pandas customer feature contract in local Spark 3.5.9 and reconciled 5,000 customers across 23 columns.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Databricks-compatible example</h3>
+            <p>A notebook-source entry point reuses the Spark pipeline. It is compatibility evidence only; Databricks execution has not been performed.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>MLflow</h3>
+            <p>Two local file-based experiments contain nine runs. Existing results were tracked retrospectively; tracking is not integrated into a model registry or production training service.</p>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>FastAPI &amp; Streamlit</h3>
+            <p>Local inference API and read-only dashboard prototypes were tested locally. They are not deployed services and have no production access controls or monitoring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section section-dark" id="validation">
+      <div class="container">
+        <span class="section-label">Validation &amp; limitations</span>
+        <h2 class="tokenlab-case-heading">What the evidence does—and does not—show</h2>
+        <div class="tokenlab-case-grid">
+          <article class="tokenlab-case-card">
+            <h3>Verified within the project</h3>
+            <ul class="tokenlab-case-list">
+              <li>Automated project test suite passed locally.</li>
+              <li>PySpark customer outputs reconciled against the pandas reference with documented tolerances.</li>
+              <li>Chronological one-step forecasting validation and walk-forward outputs are recorded.</li>
+              <li>FastAPI and Streamlit prototypes were exercised locally.</li>
+            </ul>
+          </article>
+          <article class="tokenlab-case-card">
+            <h3>Important limitations</h3>
+            <ul class="tokenlab-case-list">
+              <li>All source datasets are synthetic; no commercial outcomes are measured.</li>
+              <li>Transaction coverage is inferred from observed dates, not independently proven complete.</li>
+              <li>Churn holdout and earlier forecasting test results have been inspected; fresh independent evaluation is needed.</li>
+              <li>PostgreSQL examples were not executed; Databricks and cloud execution were not performed.</li>
+              <li>Docker production deployment, monitoring, model governance, and causal treatment effects are not demonstrated.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenlab-case-section" id="evidence">
+      <div class="container">
+        <span class="section-label">Results &amp; evidence</span>
+        <h2 class="tokenlab-case-heading">Selected project evidence</h2>
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <span class="kpi-value">0.782</span>
+            <span class="kpi-label">churn test ROC-AUC · synthetic out-of-time holdout</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">0.616</span>
+            <span class="kpi-label">churn test PR-AUC / average precision</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">8.37</span>
+            <span class="kpi-label">forecast walk-forward MAE · validation</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">21.48%</span>
+            <span class="kpi-label">forecast walk-forward WAPE · validation</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">5,000</span>
+            <span class="kpi-label">customers in local Spark reconciliation</span>
+          </article>
+          <article class="kpi-card">
+            <span class="kpi-value">9 runs</span>
+            <span class="kpi-label">two local MLflow experiments</span>
+          </article>
+        </div>
+        <p class="tokenlab-case-preview-caption">
+          Metrics are reproduced from the project reports. Model results are
+          synthetic-data evaluation figures, not commercial performance claims.
+          See the repository for methodology, artifacts, tests, and limitations.
+        </p>
+        <div class="tokenlab-case-actions">
+          <a
+            class="btn btn-primary"
+            href="https://github.com/Gaurav-XD/consumer-intelligence-demand-forecasting"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View GitHub repository</a>
+          <a class="btn btn-outline" href="index.html">Back to Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="tokenlab-case-footer">
+    <div class="container tokenlab-case-footer-inner">
+      <p class="footer-role">Consumer Intelligence &amp; Demand Forecasting · Independent synthetic-data project</p>
+      <div class="tokenlab-case-nav-links">
+        <a href="index.html#projects">Portfolio</a>
+        <a href="https://github.com/Gaurav-XD/consumer-intelligence-demand-forecasting" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
